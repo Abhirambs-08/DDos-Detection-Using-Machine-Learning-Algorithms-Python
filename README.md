@@ -21,6 +21,10 @@ The project "DDoS Detection using Machine Learning" focuses on developing an adv
 
 - Reduced False Positives: Design algorithms that minimize false positive rates by discerning between legitimate traffic fluctuations and genuine DDoS attacks. Achieving a higher level of accuracy will alleviate the unnecessary strain on resources caused by false alarms.
 
+## Flowchart
+![image](https://github.com/Abhirambs-08/DDos-Detection-Using-Machine-Learning-Algorithms-Python/assets/119886477/86b78255-13bd-48b8-bc52-c61976eb8876)
+
+
 ## Testing and Validation
 ### Performing DDoS and its testing
 A Distributed Denial of Service (DDoS) attack is a malicious attempt to disrupt the normal functioning of a target website or online service by overwhelming it with a massive volume of traffic from multiple sources. Kali Linux is a popular penetration testing and ethical hacking platform that provides various tools for assessing and testing the security of networks and systems. One such tool is GoldenEye, a Python-based application used to launch DDoS attacks. Wireshark, on the other hand, is a widely used network protocol analyzer that captures and inspects network traffic in real-time. Here is a description of how to perform a DDoS attack using GoldenEye and capture the data using Wireshark:
@@ -46,3 +50,35 @@ A Distributed Denial of Service (DDoS) attack is a malicious attempt to disrupt 
   - Analyze Captured Data: As the DDoS attack is ongoing, Wireshark will capture and display the network packets in real-time. You can analyze the captured data to see the flood of requests being sent to the target server and the responses it generates.
 
   - Save Captured Data: Once you have captured enough data to analyze, you can stop the capture and save the captured packets to a file for further examination.
+![image](https://github.com/Abhirambs-08/DDos-Detection-Using-Machine-Learning-Algorithms-Python/assets/119886477/1a475cf7-734e-43d7-85c8-085b60b7e015)
+![image](https://github.com/Abhirambs-08/DDos-Detection-Using-Machine-Learning-Algorithms-Python/assets/119886477/9102474d-4033-4bfd-b06c-0dae7250d014)
+
+## RESULTS
+Summary of the accuracy and performance metrics achieved by each model:
+
+- Logistic Regression:
+  - Accuracy: 76.64%
+  - Best solver: liblinear
+  -	Precision, recall, and F1-score are reported for both classes (0: Benign, 1: Malicious).
+  - The model performs reasonably well, with good precision and recall for both classes.
+- Support Vector Machine (SVM):
+  - Accuracy: 97.0%
+  - Best kernel: rbf
+  - Similar to Logistic Regression, precision, recall, and F1-score are reported for both classes.
+  - SVM shows high accuracy and balanced precision and recall for both classes.
+- Random Forest:
+  - Accuracy: 100.0%
+  - The model achieves a perfect accuracy of 100%, indicating strong classification performance.
+  - High precision, recall, and F1-score values are observed for both classes.
+- Gradient Boosting:
+  - Accuracy: 99.54%
+  - The model shows excellent accuracy and balanced performance in terms of precision and recall. 
+  - Both classes are well classified, indicating the effectiveness of Gradient Boosting.
+    
+These results showcase the capabilities of the trained models in accurately classifying network traffic as either benign or malicious. The Random Forest model stands out with its perfect accuracy, while other models like SVM and Gradient Boosting also demonstrate impressive performance. The choice of the best model should consider not only accuracy but also precision, recall, and F1-score, depending on the specific requirements of the DDoS detection system.
+![image](https://github.com/Abhirambs-08/DDos-Detection-Using-Machine-Learning-Algorithms-Python/assets/119886477/fcd8c03b-e7fb-4970-85ee-2ae1525beba3)
+![image](https://github.com/Abhirambs-08/DDos-Detection-Using-Machine-Learning-Algorithms-Python/assets/119886477/77b80dd9-8683-47f9-9984-7b00e1384606)
+
+
+![image](https://github.com/Abhirambs-08/DDos-Detection-Using-Machine-Learning-Algorithms-Python/assets/119886477/b21b6e4c-43f5-47e5-940b-3302974e1a6a)
+
